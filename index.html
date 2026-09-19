@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LUMA — premium fashion store for modern everyday essentials."
+    />
+    <title>LUMA — premium essentials</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo">LUMA</a>
+
+        <nav class="nav" id="mainNav" aria-label="Main navigation">
+          <a href="#new">Новинки</a>
+          <a href="#shop">Купити</a>
+          <a href="#about">Про бренд</a>
+          <a href="#journal">Журнал</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton" type="button">
+          ☰
+        </button>
+
+        <div class="nav-actions">
+          <button class="ghost-btn" id="searchButton" type="button">
+            Пошук
+          </button>
+          <button class="cart-btn" type="button">
+            Кошик <span id="cartCount">0</span>
+        </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Нова колекція 2026</p>
+            <h1>Мінімалізм, який говорить голосно.</h1>
+            <p class="hero-text">
+              Стильні речі для повсякденного життя — з якісними тканинами,
+              продуманим кроєм і вишуканим дизайном.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-btn" href="#shop">Переглянути колекцію</a>
+              <a class="secondary-btn" href="#about">Дізнатися більше</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Brand stats">
+              <li><strong>24k+</strong><span>клієнтів</span></li>
+              <li><strong>4.9/5</strong><span>рейтинг</span></li>
+              <li><strong>48h</strong><span>доставка</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Fashion lookbook">
+            <div class="hero-card hero-card-main">
+              <img
+                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80"
+                alt="Модель у стильному одязі"
+              />
+            </div>
+
+            <div class="hero-card hero-card-small">
+              <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+                alt="Модель у casual fashion"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="new">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow dark">Чому LUMA</p>
+            <h2>Преміальна якість без зайвого.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-item">
+              <span>01</span>
+              <h3>Якісні матеріали</h3>
+              <p>Бавовна, льон і сучасні суміші для комфорту і довгого використання.</p>
+            </article>
+
+            <article class="feature-item">
+              <span>02</span>
+              <h3>Сучасний крій</h3>
+              <p>Універсальні речі, що пасують до повсякденного вбрання та офісного стилю.</p>
+            </article>
+
+            <article class="feature-item">
+              <span>03</span>
+              <h3>Швидка доставка</h3>
+              <p>Замовлення із Києва відправляємо швидко та без зайвих складнощів.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop" id="shop">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow dark">Популярні товари</p>
+              <h2>Обери свій стиль.</h2>
+            </div>
+            <a href="#" class="text-link">Увесь каталог</a>
+          </div>
+
+          <div class="shop-tools">
+            <input
+              type="text"
+              id="searchInput"
+              class="search-input"
+              placeholder="Пошук товарів..."
+            />
+
+            <div class="filter-row">
+              <button type="button" class="filter-btn active" data-filter="all">
+                Усі
+              </button>
+              <button type="button" class="filter-btn" data-filter="essentials">
+                Essentials
+              </button>
+              <button type="button" class="filter-btn" data-filter="outerwear">
+                Outerwear
+              </button>
+              <button type="button" class="filter-btn" data-filter="women">
+                Women
+              </button>
+            </div>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card" data-category="essentials" data-name="Basic Crew Tee">
+              <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+                alt="Базова біла футболка Basic Crew Tee"
+              />
+              <div class="product-info">
+                <div class="product-meta">
+                  <span>Essentials</span>
+                  <span>₴1,200</span>
+                </div>
+                <h3>Basic Crew Tee</h3>
+                <button
+                  type="button"
+                  class="add-to-cart"
+                  data-name="Basic Crew Tee"
+                  data-price="1200"
+                >
+                  Додати в кошик
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="outerwear" data-name="Ultra Layer Jacket">
+              <img
+                src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=900&q=80"
+                alt="Одна модель у стильній куртці Ultra Layer Jacket"
+              />
+              <div class="product-info">
+                <div class="product-meta">
+                  <span>Outerwear</span>
+                  <span>₴3,500</span>
+                </div>
+                <h3>Ultra Layer Jacket</h3>
+                <button
+                  type="button"
+                  class="add-to-cart"
+                  data-name="Ultra Layer Jacket"
+                  data-price="3500"
+                >
+                  Додати в кошик
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="women" data-name="Softline Dress">
+              <img
+                src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=900&q=80"
+                alt="Одна модель у сукні Softline Dress"
+              />
+              <div class="product-info">
+                <div class="product-meta">
+                  <span>Women</span>
+                  <span>₴2,800</span>
+                </div>
+                <h3>Softline Dress</h3>
+                <button
+                  type="button"
+                  class="add-to-cart"
+                  data-name="Softline Dress"
+                  data-price="2800"
+                >
+                  Додати в кошик
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story" id="about">
+        <div class="container story-grid">
+          <div class="story-image">
+            <img
+              src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80"
+              alt="Модель у сучасному образі LUMA"
+            />
+          </div>
+
+          <div class="story-copy">
+            <p class="eyebrow dark">Про бренд</p>
+            <h2>Ми створюємо речі, які хочеться носити щодня.</h2>
+            <p>
+              LUMA — це український бренд, який поєднує мінімалізм, практичність і
+              сучасний стиль. Ми віримо, що базовий гардероб повинен бути простим,
+              але красивим, комфортним і впевненим.
+            </p>
+            <p>
+              Кожна модель продумана до дрібниць: від тканини до деталей, щоб ви
+              відчували себе впевнено в будь-який день.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="journal" id="journal">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow dark">Журнал</p>
+            <h2>Ідеї для стилю та життя.</h2>
+          </div>
+
+          <div class="journal-grid">
+            <article class="journal-card">
+              <img
+                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+                alt="Літній стиль"
+              />
+              <div>
+                <span>Стиль</span>
+                <h3>Як скласти базовий гардероб</h3>
+              </div>
+            </article>
+
+            <article class="journal-card">
+              <img
+                src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=80"
+                alt="Людський стиль"
+              />
+              <div>
+                <span>Мода</span>
+                <h3>Що носити в офісі та вільний час</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="logo">LUMA</a>
+          <p>Premium essentials for everyday living.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#shop">Каталог</a>
+          <a href="#about">Про бренд</a>
+          <a href="#journal">Журнал</a>
+        </div>
+
+        <div class="footer-contact">
+          <a href="mailto:hello@luma.store">hello@luma.store</a>
+          <p>© <span id="year"></span> LUMA</p>
+        </div>
+      </div>
+    </footer>
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <aside class="cart-panel" id="cartPanel">
+      <div class="cart-panel-header">
+        <h3>Ваш кошик</h3>
+        <button class="close-cart" id="closeCart">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items">
+        <p class="empty-cart-message">
+          Ваш кошик порожній
+        </p>
+      </div>
+
+      <div class="cart-summary">
+        <p>Разом:</p>
+        <strong id="cartTotal">0 грн</strong>
+      </div>
+      <button class="clear-cart-btn" type="button">Очистити кошик</button>
+      
+      <form id="checkoutForm" class="checkout-form">
+        <h4>Оформлення замовлення</h4>
+
+        <label>
+          Ім'я
+          <input type="text" name="name" placeholder="Ваше ім'я" required />
+         </label>
+
+         <label>
+          Телефон
+          <input type="tel" name="phone" placeholder="+380..." required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="mail@example.com" required />
+          </label>
+
+          <label>
+            Адреса
+            <textarea name="address" rows="3" placeholder="Ваша адреса"></textarea>
+          </label>
+
+      <button type="submit" class="checkout-btn" id="checkoutButton" disabled>
+        Оформити замовлення
+      </button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
